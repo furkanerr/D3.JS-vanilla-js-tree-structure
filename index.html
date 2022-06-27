@@ -12,7 +12,8 @@
     <nav class="nav">
        <div class="nedir-searchInput-conatiner">
         <div class="nedir">
-           <button class="toggle-button"> Yaşam Ağacı Nedir?</button>
+           <button class="toggle-button" id="button"> Yaşam Ağacı Nedir?</button>
+           <div class="collapse">
             <p>
               Yaşam Ağacı, Evrim Ağacı tarafından başlatılan ve Evrim Ağacı yazarları
               tarafından geliştirilen bir türler kataloğudur. Bu türler, evrimsel
@@ -24,6 +25,7 @@
               bünyesinde çalışan gözlemci ve fotoğrafçılarımızın özgün gözlem ve
               fotoğraflarını görmeniz mümkün olacaktır.
             </p>
+        </div>
         </div>
       <div class="search-input">
         <input type="text" />
@@ -40,7 +42,9 @@
     <svg></svg>
 </div>
 
-
+<script  src="https://d3js.org/d3.v7.min.js"></script>
+<script type="module"  src="js/tree.js"></script>
     <script type="module" src="js/router.js"></script>
+    
   </body>
 </html>

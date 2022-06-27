@@ -24,3 +24,8 @@ window.onpopstate = handleLocationChange;
 window.route = route;
 
 handleLocationChange();
+
+document.getElementById('button').addEventListener('click', () => {
+    document.getElementsByClassName('collapse')[0].classList.toggle('show');
+}
+);
