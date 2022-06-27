@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/scss/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="nav">
+       <div class="nedir-searchInput-conatiner">
+        <div class="nedir">
+           <button class="toggle-button"> Yaşam Ağacı Nedir?</button>
+            <p>
+              Yaşam Ağacı, Evrim Ağacı tarafından başlatılan ve Evrim Ağacı yazarları
+              tarafından geliştirilen bir türler kataloğudur. Bu türler, evrimsel
+              akrabalık ilişkilerine göre, filogenetik bir ağaç olarak
+              gösterilmektedir. Dolayısıyla birbirine yakın dallarda bulunanlar daha
+              yakın, uzak dallarda bulunan daha uzak akraba türlerdir. Dalların
+              ucundaki isimlere tıklayarak, o takson ile ilgili bilgi alabileceğiniz
+              içeriğimize gitmeniz mümkündür. Bu içerikler içinde, Evrim Ağacı
+              bünyesinde çalışan gözlemci ve fotoğrafçılarımızın özgün gözlem ve
+              fotoğraflarını görmeniz mümkün olacaktır.
+            </p>
+        </div>
+      <div class="search-input">
+        <input type="text" />
+      </div>
+    </div>
+    <div class="navigations">
+        <ul>
+          <li><a href="/" onclick="route()">Home</a></li>
+          <li><a href="/listPage" onclick="route()">Liste</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div id="main-page"></div>
+    <svg></svg>
+</div>
+
+
+    <script type="module" src="js/router.js"></script>
+  </body>
+</html>
