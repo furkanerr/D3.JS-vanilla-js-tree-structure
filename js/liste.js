@@ -103,5 +103,5 @@ let data = await fetchData();
   autocomplete(document.getElementById("myInput"), unique);
 
 
-  let elemtOfList = unique.map(item => (`<li><a href=${item.url} terget='_blank'>${item.name}</a></li>`))
-  document.getElementById('listOfElements').innerHTML=elemtOfList
+  let elementOfList = unique.map(item => (`<li><a href=${item.url} terget='_blank'>${item.name}</a></li>`))
+  document.getElementById('listOfElements').innerHTML=elementOfList
