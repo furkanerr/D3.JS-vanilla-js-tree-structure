@@ -9,9 +9,8 @@ a {
   text-decoration: none;
 }
 
-.container path {
-  fill: none;
-  stroke: black;
+.container .svg-tree {
+  width: 200%;
 }
 .container .nav {
   display: flex;
@@ -25,6 +24,26 @@ a {
 .container .nav .collapse.show {
   display: block;
 }
+.container .nav .navigations {
+  display: flex;
+}
+.container .nav .navigations a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.container .nav .navigations a:hover {
+  color: #ffc107;
+}
+.container .nav .navigations li {
+  border: 1px solid;
+  border-color: #ffc107;
+}
+.container .nav .navigations li:hover {
+  border-color: #07ff98;
+}
 .container .nav .nedir-searchInput-conatiner {
   display: flex;
   flex-direction: column;
@@ -34,10 +53,11 @@ a {
 }
 .container .nav .nedir-searchInput-conatiner .search-input {
   width: 100%;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  align-items: center;
+  flex-direction: column;
 }
 .container .nav .nedir-searchInput-conatiner .search-input input {
   border-color: #cb0a14;

@@ -10,10 +10,10 @@
 a{
     text-decoration: none;
 }
+
 .container{
-    path{
-        fill:none;
-        stroke: black;
+    .svg-tree{
+        width:200%;
     }
 .nav{
     display: flex;
@@ -26,8 +26,27 @@ a{
    }
    .collapse.show{
     display: block;
- 
-    
+    }
+    .navigations{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.5rem;
+          
+            &:hover{
+                color: $aHover-color;
+            }
+        }
+        li{
+            border:1px solid;
+            border-color: $aHover-color;
+            &:hover{
+                border-color: #07ff98;
+            }
+        }
     }
     .nedir-searchInput-conatiner{
         display: flex;
@@ -35,13 +54,14 @@ a{
         align-items: center;
         justify-content: center;
         width: 100%;
+        
         .search-input{
             width: 100%;
-            background-color: aqua;
             display: flex;
             justify-content: center;
             margin-bottom: 10px;
-
+            align-items: center;
+            flex-direction: column;
             input{
                 border-color: $border-color-input;
                 width: 250px;

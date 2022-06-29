@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/scss/index.css" />
+  
     <title>Document</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
         </div>
         </div>
       <div class="search-input">
-        <input type="text" />
+        <input id="myInput" type="text" />
       </div>
     </div>
     <div class="navigations">
@@ -38,13 +39,16 @@
         </ul>
     </div>
     </nav>
-    <div id="main-page"></div>
-    <svg></svg>
+    <div id="main-page"> </div>
+    <div class="svg-tree">  <svg></svg></div>
+  
+
+    <ul id="listOfElements"></ul>
 </div>
 
-<script  src="https://d3js.org/d3.v7.min.js"></script>
+<script type="module" src="js/router.js"></script>
+<script  type="module"  src="https://d3js.org/d3.v7.min.js"></script>
 <script type="module"  src="js/tree.js"></script>
-    <script type="module" src="js/router.js"></script>
-    
+<script type="module"  src="js/liste.js"></script>
   </body>
 </html>
